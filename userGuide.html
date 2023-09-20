@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>R2F Submission Tracker User Guide</title>
+</head>
+
+<body>
+
+    <h1>R2F Submission Tracker User Guide</h1>
+
+    <h2>Table of Contents</h2>
+    <ul>
+        <li><a href="#1-introduction">1. Introduction</a></li>
+        <li><a href="#2-getting-started">2. Getting Started</a>
+            <ul>
+                <li><a href="#21-login">2.1 Login</a></li>
+                <li><a href="#22-user-roles">2.2 User Roles</a></li>
+            </ul>
+        </li>
+        <li><a href="#3-dashboard">3. Dashboard</a>
+            <ul>
+                <li><a href="#31-overview">3.1 Overview</a></li>
+                <li><a href="#32-navigation">3.2 Navigation</a></li>
+                <li><a href="#33-filters">3.3 Filters</a></li>
+            </ul>
+        </li>
+        <li><a href="#4-submitting-equipment-requests">4. Submitting Equipment Requests</a>
+            <ul>
+                <li><a href="#41-user-role">4.1 User Role</a></li>
+            </ul>
+        </li>
+        <li><a href="#5-viewing-equipment-data">5. Viewing Equipment Data</a>
+            <ul>
+                <li><a href="#51-user-role">5.1 User Role</a></li>
+                <li><a href="#52-admin-role">5.2 Admin Role</a></li>
+            </ul>
+        </li>
+        <li><a href="#6-managing-equipment-data">6. Managing Equipment Data</a>
+            <ul>
+                <li><a href="#61-adding-new-equipment">6.1 Adding New Equipment</a></li>
+                <li><a href="#62-editing-existing-equipment">6.2 Editing Existing Equipment</a></li>
+                <li><a href="#63-deleting-equipment">6.3 Deleting Equipment</a></li>
+            </ul>
+        </li>
+        <li><a href="#7-approval-workflow">7. Approval Workflow</a>
+            <ul>
+                <li><a href="#71-requesting-approval">7.1 Requesting Approval</a></li>
+                <li><a href="#72-approving-requests">7.2 Approving Requests</a></li>
+            </ul>
+        </li>
+        <li><a href="#8-generating-reports">8. Generating Reports</a>
+            <ul>
+                <li><a href="#81-user-role">8.1 User Role</a></li>
+                <li><a href="#82-admin-role">8.2 Admin Role</a></li>
+            </ul>
+        </li>
+        <li><a href="#9-troubleshooting">9. Troubleshooting</a>
+            <ul>
+                <li><a href="#91-common-issues">9.1 Common Issues</a></li>
+                <li><a href="#92-contacting-support">9.2 Contacting Support</a></li>
+            </ul>
+        </li>
+        <li><a href="#10-faqs">10. FAQs</a></li>
+        <li><a href="#11-appendix">11. Appendix</a>
+            <ul>
+                <li><a href="#111-glossary-of-terms">11.1 Glossary of Terms</a></li>
+                <li><a href="#112-keyboard-shortcuts">11.2 Keyboard Shortcuts</a></li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2>1. Introduction</h2>
+
+    <p>Welcome to the <strong>R2F Submission Tracker</strong> user guide. This guide will help you understand how to use the
+        application effectively to submit, manage, and track Repair-to-Field (R2F) equipment requests. Whether you are a
+        standard user or an administrator, this guide provides step-by-step instructions and tips to streamline your
+        experience with the application.</p>
+
+    <h2>2. Getting Started</h2>
+
+    <h3>2.1 Login</h3>
+
+    <p>To access the standalone R2F Submission Tracker app, follow these steps:</p>
+
+    <ol>
+        <li>Open your web browser.</li>
+        <li>Navigate to the <a href="https://apps.powerapps.com/play/e/default-b7be7686-6f97-4db7-9081-a23cf09a96b5/a/770991c1-ffb9-4821-b812-7672359b25df?tenantId=b7be7686-6f97-4db7-9081-a23cf09a96b5&hint=4f66e8b2-12bd-48a4-b1dd-41749c6c9807&sourcetime=1695168971602">application's URL</a> .</li>
+        <li>Enter your credentials (username and password).</li>
+        <li>Grant access to connectors that necessitate sign-in credentials.</li>
+        <li>If you currently lack access privileges, kindly request permission.</li>
+    </ol>
+
+    <p><strong>Alternatively, if you are operating within the Teams domain, you can request access through your local CI champion.</strong></p>
+
+
+    <h3>2.2 User Roles</h3>
+
+    <p>The R2F Submission Tracker offers two primary user roles:</p>
+
+    <ul>
+        <li><strong>User:</strong> Users can submit, view, and download reports of R2F submissions specific to their region.</li>
+        <li><strong>Admin:</strong> Administrators have broader access. They can view, download, and submit R2F equipment for multiple regions.</li>
+    </ul>
+  
+    <h2>3. Dashboard</h2>
+
+    <h3>3.1 Overview</h3>
+
+    <p>This app dashboard has two buttons:</p>
+
+<ol>
+    <li>
+        <strong>Submit Button:</strong>
+        <p>
+            For basic users, this button redirects them to the submission page where they can submit R2F equipment data specific to their region. On the submission page:
+        </p>
+        <ul>
+            <li>A summary of the submission progress is displayed on the left.</li>
+            <li>The selection pane is available on the right.</li>
+            <li>Users can choose their district and specify the submission period.</li>
+            <li>Selecting the SubPSL or entering material details will populate the available inventory for selection.</li>
+            <li>Once the submission is finalized, users can click the "Save" button to initiate the approval workflow, which is sent to their manager.</li>
+        </ul>
+    </li>
+    <br>
+    <li>
+        <strong>Submit Button (Admin):</strong>
+        <p>
+            For admin users, the process works similarly, with the added ability to select a different region for equipment submission compared to basic users, who have their country auto-selected for them. This additional region selection capability allows administrators to manage equipment data across multiple regions efficiently.
+        </p>
+    </li>
+</ol>
+
+<p>Additionally, users can access the following options by clicking the user image in the top-right corner:</p>
+
+<ul>
+    <li>User Guide: A guide for app usage.</li>
+    <li>Report Hub: Access to various reports.</li>
+    <li>Technical Documents: Documents related to the app's technical details.</li>
+</ul>
+
+
+    <h3>3.2 Navigation</h3>
+
+    <p>Learn how to navigate through the application's various sections, including the dashboard, equipment submission, data
+        viewing, and report generation.</p>
+
+    <h3>3.3 Filters</h3>
+
+    <p>Use filters to refine your view of equipment requests, making it easier to find specific entries or track the status of
+        your submissions.</p>
+
+    <h2>4. Submitting Equipment Requests</h2>
+
+    <h3>4.1 User Role</h3>
+
+    <p>If you are a standard user, follow these steps to submit an equipment request:</p>
+    <!-- Previous sections are here -->
+
+    <h2>5. Viewing Equipment Data</h2>
+
+    <h3>5.1 User Role</h3>
+
+    <p>As a standard user, you can view equipment data relevant to your region. Follow these steps to access equipment information:</p>
+
+    <ol>
+        <li>Navigate to the "Equipment" section of the application.</li>
+        <li>Use the filters to specify your region or district.</li>
+        <li>Click on an equipment entry to view its details.</li>
+    </ol>
+
+    <h3>5.2 Admin Role</h3>
+
+    <p>Administrators have broader access to equipment data. Here's how administrators can view equipment information:</p>
+
+    <ol>
+        <li>Navigate to the "Equipment" section of the application.</li>
+        <li>Use the filters to specify the desired region or district.</li>
+        <li>Click on an equipment entry to view its details.</li>
+    </ol>
+
+    <h2>6. Managing Equipment Data</h2>
+
+    <h3>6.1 Adding New Equipment</h3>
+
+    <p>Both standard users and administrators can add new equipment entries. Follow these steps to add new equipment:</p>
+
+    <ol>
+        <li>Navigate to the "Equipment" section.</li>
+        <li>Click the "Add New Equipment" button.</li>
+        <li>Fill out the required information in the form.</li>
+        <li>Click the "Submit" button to save the new equipment entry.</li>
+    </ol>
+
+    <h3>6.2 Editing Existing Equipment</h3>
+
+    <p>To edit existing equipment entries, follow these steps:</p>
+
+    <ol>
+        <li>Locate the equipment entry you wish to edit.</li>
+        <li>Click on the entry to access its details.</li>
+        <li>Click the "Edit" button.</li>
+        <li>Update the necessary information.</li>
+        <li>Click the "Save" button to apply the changes.</li>
+    </ol>
+
+    <h3>6.3 Deleting Equipment</h3>
+
+    <p>Deleting equipment entries should be done with caution. Follow these steps to delete an equipment entry:</p>
+
+    <ol>
+        <li>Locate the equipment entry you want to delete.</li>
+        <li>Click on the entry to access its details.</li>
+        <li>Click the "Delete" button.</li>
+        <li>Confirm the deletion when prompted.</li>
+    </ol>
+
+    <h2>7. Approval Workflow</h2>
+
+    <h3>7.1 Requesting Approval</h3>
+
+    <p>When you submit an equipment request, it enters the approval workflow. The request is automatically routed to your manager
+        for review. You can track the approval status from your dashboard.</p>
+
+    <h3>7.2 Approving Requests</h3>
+
+    <p>Managers and administrators can approve or reject equipment requests. Follow these steps to approve a request:</p>
+
+    <ol>
+        <li>Access the "Approvals" section.</li>
+        <li>Locate the pending request.</li>
+        <li>Click on the request to view its details.</li>
+        <li>Click the "Approve" or "Reject" button as appropriate.</li>
+        <li>Provide comments if necessary.</li>
+    </ol>
+
+
+       <h2>8. Generating Reports</h2>
+
+       <h3>8.1 User Role</h3>
+   
+       <p>Standard users can generate reports for their region. Here's how:</p>
+   
+       <ol>
+           <li>Go to the "Reports" section.</li>
+           <li>Select the report parameters, including the date range and region.</li>
+           <li>Click the "Generate Report" button.</li>
+           <li>Download the report in your preferred format.</li>
+       </ol>
+   
+       <h3>8.2 Admin Role</h3>
+   
+       <p>Administrators have access to reports for multiple regions. The process for generating reports is the same as for standard users but with a broader scope.</p>
+   
+       <h2>9. Troubleshooting</h2>
+   
+       <h3>9.1 Common Issues</h3>
+   
+       <p>If you encounter issues or errors while using the application, consult this section for common solutions and troubleshooting steps.</p>
+   
+       <h3>9.2 Contacting Support</h3>
+   
+       <p>For technical assistance and support, please contact our support team at <a href="mailto:erwan.sudiman@halliburton.com">erwan.sudiman@halliburton.com</a>. Be sure to provide detailed information about the issue you're facing.</p>
+   
+       <h2>10. FAQs</h2>
+   
+       <p>Explore frequently asked questions to find quick answers to common queries and concerns.</p>
+   
+       <h2>11. Appendix</h2>
+   
+       <h3>11.1 Glossary of Terms</h3>
+   
+       <p>A glossary of key terms and acronyms used in the application.</p>
+   
+       <h3>11.2 Keyboard Shortcuts</h3>
+   
+       <p>Learn useful keyboard shortcuts to navigate and operate the application more efficiently.</p>
+   
+       <p>This concludes the user guide for the <strong>R2F Submission Tracker</strong>. If you have any further questions or need additional assistance, please don't hesitate to reach out to our support team. We hope this guide helps you make the most of the application and streamline your equipment submission and management processes.</p>
+   </body>
+   </html>
+   
